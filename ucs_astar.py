@@ -597,7 +597,7 @@ def combining_heuristics():
     text("Proof:")
     text("h(s)")
     text("= max(h1(s), h2(s)) [definition of h]")
-    text("<= max(Cost(s, a) + h1(Succ(s, a)), h2(Cost(s, a)) + h2(Succ(s, a))) [because h1 and h2 are consistent]")
+    text("<= max(Cost(s, a) + h1(Succ(s, a)), Cost(s, a) + h2(Succ(s, a))) [because h1 and h2 are consistent]")
     text("= Cost(s, a) + max(h1(Succ(s, a)), h2(Succ(s, a))) [pull out constant]")
     text("= Cost(s, a) + h(Succ(s, a)) [definition of h]")
     text("Therefore, h is consistent.")
